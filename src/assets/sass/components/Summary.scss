@@ -1,0 +1,11 @@
+@import '../varibles';
+
+#Summary {
+   border-radius: 15px;
+   background-color: $VeryPaleOrange;
+
+   .thin-text {
+      color: $MediumBrown;
+      font-size: 17px;
+   }
+}

@@ -1,5 +1,7 @@
-html, body {
+html, body, main {
     min-width: 375px !important;
     max-width: 1440px !important;
     min-height: 100dvh;
+    background-color: hsl(27, 66%, 92%);
+    letter-spacing: .2px;
 }
