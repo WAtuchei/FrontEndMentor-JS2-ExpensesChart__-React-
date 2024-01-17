@@ -2,8 +2,7 @@ import "../sass/components/MyBalance.scss";
 
 function MyBalance() {
   return (
-    <section
-      id="myBalance"
+    <header
       className="container w-[90%] flex flex-row justify-between items-center px-6 py-5 text-white"
     >
       <div>
@@ -13,7 +12,7 @@ function MyBalance() {
       <div>
         <img src="../../../images/logo.svg" alt="App-logo" />
       </div>
-    </section>
+    </header>
   );
 }
 export default MyBalance;
