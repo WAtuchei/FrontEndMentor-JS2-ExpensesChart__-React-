@@ -1,4 +1,4 @@
-import "../sass/components/MyBalance.scss";
+import "../../sass/components/MyBalance.scss";
 
 function MyBalance() {
   return (

@@ -1,4 +1,4 @@
-import "../sass/components/Summary.scss";
+import "../../sass/components/Summary.scss";
 
 function Summary() {
   return (

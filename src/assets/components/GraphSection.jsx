@@ -1,4 +1,4 @@
-import "../sass/components/Graph.scss"
+import "../../sass/components/GraphSection.scss"
 import Graph from "./Graph"
 
 function GraphSection() {
