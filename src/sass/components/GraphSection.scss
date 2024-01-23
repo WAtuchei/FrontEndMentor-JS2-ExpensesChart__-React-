@@ -1,0 +1,35 @@
+@import "../varibles";
+
+.Graph-con {
+   color: $DarkBrown;
+   border-radius: 15px 15px 0 0;
+   background-color: $VeryPaleOrange;
+
+   h2 {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: .8px;
+   }
+
+   li {
+      background-color: #fff;
+      height: 150px;
+
+      .Graph-day {
+         background-color: $SoftRed;
+         border-radius: 5px;
+      
+         &__Top {
+            background-color: $Cyan;
+            border-radius: 5px;
+         }
+      }
+      p { color: $MediumBrown; }
+   }
+
+   .break-line {
+      content: '';
+      height: 2px;
+      background-color: $Cream;
+   }
+}
