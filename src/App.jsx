@@ -8,10 +8,12 @@ import Summary from "./assets/components/Summary"
 function App() {
   return (
     <DataContext.Provider value={ jsonData }>
-      <main className="min-w-full h-full flex flex-col justify-center items-center">
-        <MyBalance />
-        <Graph />
-        <Summary />
+      <main className="min-w-full h-full flex justify-center items-center">
+        <div className="main-container w-full flex flex-col justify-center items-center">
+          <MyBalance />
+          <Graph />
+          <Summary />
+        </div>
       </main>
     </DataContext.Provider>
   )
