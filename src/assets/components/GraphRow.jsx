@@ -5,21 +5,25 @@ import GraphDay from "./GraphDay"
 
 function Graph() {
   const graphData = useContext(DataContext)
-  const hightestDayAmount = graphData.reduce((maxAmount, currAmount) => {
+  const highestDayAmount = graphData.reduce((maxAmount, currAmount) => {
     return currAmount.amount > maxAmount.amount ? currAmount : maxAmount
   })
+  const calGraphHeight = (maxHeight, currentHight) => {
+    return Math.ceil((currentHight * 100) / maxHeight)
+  }
 
   return (
     <>
       <ul
         className="container w-full h-[200px] flex flex-row flex-nowrap gap-x-4 mt-7"
       >
-        {graphData.map((data, index) =>{
+        {graphData.map((data) =>{
           return (
             <GraphDay 
-              key={index}
+              key={data.day}
               data={data}
-              isHightest={data.day === hightestDayAmount.day} />
+              isHighest={data.day === highestDayAmount.day} 
+              graphHeight={calGraphHeight(highestDayAmount.amount, data.amount)}/>
             )
         })}
       </ul>
