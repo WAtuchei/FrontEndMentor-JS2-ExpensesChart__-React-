@@ -5,11 +5,7 @@ import PropTypes from "prop-types"
 function GraphDay({data, isHighest, graphHeight}) {
   const { day, amount } = data
   const [showIndicators, setShowIndicators] = useState(false)
-
-
-  const eachHeight = {
-    height: `${graphHeight}%`,
-  }
+  const eachHeightStyle = { height: `${graphHeight}%` }
 
   GraphDay.propTypes = {
     data: PropTypes.shape({
@@ -24,8 +20,7 @@ function GraphDay({data, isHighest, graphHeight}) {
       className="flex flex-col flex-1 justify-end items-center"
       onMouseOver={() => {setShowIndicators(true)}}
       onMouseOut={() => {setShowIndicators(false)}}
-    >
-      
+    >      
       <div className="container h-full flex flex-col justify-end">
         {showIndicators && (          
           <div className="Graph-day__indicators w-[110%] py-1 rounded text-center">
@@ -33,9 +28,10 @@ function GraphDay({data, isHighest, graphHeight}) {
           </div>
           )      
         }
+
         <div 
           className={`Graph-day${isHighest ? '__Top' : '' } w-full mt-2`}
-          style={eachHeight}
+          style={eachHeightStyle}
         >
         </div>
       </div>

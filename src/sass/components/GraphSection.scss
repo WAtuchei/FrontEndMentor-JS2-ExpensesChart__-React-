@@ -17,6 +17,11 @@
       .Graph-day {
          background-color: $SoftRed;
          border-radius: 5px;
+         &:hover, &:active {
+            filter: brightness(1.4);
+            cursor: pointer;
+            transition: all .5s ease;
+         }
 
          &__indicators {
             font-size: 14px;
@@ -24,11 +29,6 @@
             color: $Cream;
             background-color: $DarkBrown;
             animation: Indicators .5s ease;
-         }
-         &:hover, &:active {
-            filter: brightness(1.4);
-            cursor: pointer;
-            transition: all .5s ease;
          }
       
          &__Top {
@@ -41,7 +41,10 @@
             }
          }
       }
-      p { color: $MediumBrown; }
+      p {
+         color: $MediumBrown;
+         pointer-events: none;
+      }
    }
 
    .break-line {

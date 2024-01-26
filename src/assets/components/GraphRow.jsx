@@ -11,7 +11,6 @@ function Graph() {
   const calGraphHeight = (maxHeight, currentHight) => {
     return Math.ceil((currentHight * 100) / maxHeight)
   }
-
   return (
     <>
       <ul

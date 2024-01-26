@@ -1,4 +1,4 @@
-import "../../sass/components/Summary.scss";
+import "../../sass/components/Summary.scss"
 
 function Summary() {
   return (
@@ -8,16 +8,24 @@ function Summary() {
     >
       <div className="container flex flex-row justify-between items-center">
         <div className="flex flex-col justify-start">
-          <h4 className="thin-Text">Total this month</h4>
-          <p className="text-[34px] font-[700]">$478.33</p>
+          <h4 className="thin-Text">
+            Total this month
+          </h4>
+          <p className="text-[34px] font-[700]">
+            $478.33
+          </p>
         </div>
         
         <div className="flex flex-col items-end">
-          <p className="text-[18px] font-[500]">+2.4%</p>
-          <p className="thin-Text">from last month</p>
+          <p className="text-[18px] font-[500]">
+            +2.4%
+          </p>
+          <p className="thin-Text">
+            from last month
+          </p>
         </div>
       </div>
     </section>
-  );
+  )
 }
-export default Summary;
+export default Summary
